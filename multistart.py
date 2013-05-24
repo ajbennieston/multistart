@@ -13,7 +13,7 @@ import time
 
 class Handler(asynchat.async_chat):
     def __init__(self, sock, address, listener):
-        asynchat.async_chat.__init__(self, sock=sock)
+        asynchat.async_chat.__init__(self, sock)
         self.listener = listener
         self.address = address
         self.set_terminator("\n")

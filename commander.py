@@ -30,7 +30,10 @@ class Commander(asynchat.async_chat):
         self.process_input(input_str)
 
     def handle_close(self):
-        sys.exit(0)
+        pass
+
+    def handle_connect(self):
+        pass
     
     def send_command(self):
         if len(self.command_list):
