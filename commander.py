@@ -31,7 +31,7 @@ class Commander(asynchat.async_chat):
 
     def handle_connect(self):
         pass
-    
+
     def send_command(self):
         if len(self.command_list):
             self.n_returned = 0
