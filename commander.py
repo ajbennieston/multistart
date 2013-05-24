@@ -29,9 +29,6 @@ class Commander(asynchat.async_chat):
         self.input_buffer = [ ]
         self.process_input(input_str)
 
-    def handle_close(self):
-        pass
-
     def handle_connect(self):
         pass
     
